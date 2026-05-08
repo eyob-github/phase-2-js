@@ -1,0 +1,120 @@
+body {
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
+
+.wrapp-main {
+  width: 1200px;
+  padding: 100px 0;
+  margin: 0 auto;
+  border: 4px solid blue;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+a {
+  border: 2px solid rgb(248, 250, 245);
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .wrapp-main {
+    width: 100%;
+    padding: 100px 0;
+    margin: 0 auto;
+    border: 4px solid rgb(251, 255, 0);
+  }
+
+  ul {
+    display: none;
+  }
+}
+
+@media (min-width: 601px) {
+  .wrapp-main {
+    width: 100%;
+    padding: 100px 0;
+
+    border: 4px solid rgb(251, 255, 0);
+    background-color: sandybrown;
+  }
+  p::after {
+    content: "- min-width: 601px ";
+    font-style: italic;
+  }
+
+  ul {
+    display: flex;
+  }
+}
+
+@media (min-width: 778px) {
+  .wrapp-main {
+    width: 100%;
+    padding: 100px 0;
+
+    border: 4px solid rgb(251, 255, 0);
+    background-color: rgb(164, 19, 184);
+  }
+  p::after {
+    content: "- min-width: 778px ";
+    font-weight: bold;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    color: rgb(250, 177, 19);
+    font-size: 2em;
+    gap: 2em
+  }
+}
+
+@media (min-width: 998px) {
+  .wrapp-main {
+    width: 100%;
+    padding: 100px 0;
+
+    border: 4px solid rgb(17, 165, 91);
+    background-color: rgb(243, 102, 8);
+  }
+  p::after {
+    content: "- min-width: 998px ";
+    font-weight: bold;
+  }
+
+   ul {
+    display: flex;
+    list-style: none;
+    color: rgb(19, 250, 69);
+    font-size: 3em;
+    gap: 1em
+  }
+}
+
+@media (min-width: 1500px) {
+  .wrapp-main {
+    width: 980px;
+    padding: 100px 0;
+
+    border: 4px solid rgb(17, 165, 91);
+    background-color: rgb(80, 79, 79);
+  }
+  p::after {
+    content: "- min-width: 1500px ";
+    font-weight: bold;
+  }
+
+}
+
+- small-phone(<500)
+-smart-phone(501-780) (min-width: 501) and (max-width:780)
+-taplets(781-1200) (min-width: 781) and (max-width:1200)
+-pc/laptops min-width: 1201

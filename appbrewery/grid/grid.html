@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            
+
+        }
+        .container>*{
+            background-color: #60ba82;
+        }
+
+        .container1{
+            display: grid;
+            grid-template-rows: 100px auto;
+            grid-template-columns: 400px auto;
+            gap: 10px;
+        }
+        .container1>*{
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam consequuntur dolore maiores dolorum corrupti earum aliquid illo vel incidunt culpa, nemo fugit perferendis est reprehenderit beatae autem voluptate iusto.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas doloremque, assumenda sapiente nesciunt voluptate in quis ratione vel hic debitis dolore magnam perspiciatis officiis suscipit eligendi accusantium aliquam nemo quo.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum saepe obcaecati totam earum in impedit nostrum, exercitationem molestias explicabo natus sunt at ipsa inventore cupiditate quasi voluptate dolor nemo iste?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui soluta doloremque amet optio ducimus? Modi quasi a dolor dolorum quibusdam deserunt! Sunt, harum ab aliquid ipsam officiis iure eius ad!</p>
+    </div>
+
+    <div class="container1">
+        <div class="grid-item1">1</div>
+        <div class="grid-item2">2</div>
+        <div class="grid-item3">3</div>
+        <div class="grid-item4">4</div>
+    </div>
+    
+</body>
+</html>

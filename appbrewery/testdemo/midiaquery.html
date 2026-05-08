@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuery</title>
+    <style>
+        div{
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+        }
+
+        @media(max-width: 600px){
+            div{
+                height: 100px;
+                width: 100px;
+                background-color: salmon;
+                font-size: 2rem;
+                text-align: center;
+                padding: 3%;
+            }
+        }
+
+        @media (min-width: 600px){
+            h1{
+                font-style: italic;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Query</h1>
+    <div>Hello World</div>
+</body>
+</html>
